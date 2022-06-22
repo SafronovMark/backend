@@ -26,7 +26,7 @@
             </div>
             <div class="input-block">
                 <span>Дата Рождения</span>
-                <input type="date" class="input-item" name="email" />
+                <input type="date" class="input-item" name="date" />
             </div>
             <div class="input-block">
                 <span>Пол</span>
