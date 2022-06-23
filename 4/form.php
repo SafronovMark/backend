@@ -12,7 +12,7 @@
 <body>
 
     <?php
-    if ($messages['success']) {
+    if (!empty($messages['success'])) {
         print('<div id="messages">');
         print $messages['success'];
         print('</div>');
@@ -23,25 +23,27 @@
         <form method="POST" action="">
             <div class="input-block">
                 <span><?php print $messages['name']; ?></span>
-                <input type="text" class="input-item" name="name" placeholder="Петр" <?php if ($errors['name']) {
-                                                                                            print 'class="error"';
-                                                                                        } ?> value="<?php print $values['name']; ?>" />
+                <input type="text" class="input-item <?php if ($errors['name']) {
+                                                            print 'error';
+                                                        } ?>" name="name" placeholder="Петр" value="<?php print $values['name']; ?>" />
             </div>
             <div class="input-block">
                 <span><?php print $messages['email']; ?></span>
-                <input type="text" class="input-item" name="email" placeholder="petr@mail.com" <?php if ($errors['email']) {
-                                                                                                    print 'class="error"';
-                                                                                                } ?> value="<?php print $values['email']; ?>" />
+                <input type="text" class="input-item <?php if ($errors['email']) {
+                                                            print 'error';
+                                                        } ?>" name="email" placeholder="petr@mail.com" value="<?php print $values['email']; ?>" />
             </div>
             <div class="input-block">
                 <span><?php print $messages['date']; ?></span>
-                <input type="date" class="input-item" name="date" <?php if ($errors['date']) {
-                                                                        print 'class="error"';
-                                                                    } ?> value="<?php print $values['date']; ?>" />
+                <input type="date" class="input-item <?php if ($errors['date']) {
+                                                            print 'error';
+                                                        } ?>" name="date" value="<?php print $values['date']; ?>" />
             </div>
             <div class="input-block">
                 <span><?php print $messages['gender']; ?></span>
-                <div class="radios">
+                <div class="radios <?php if ($errors['gender']) {
+                                        print 'error';
+                                    } ?>">
                     <div class="male-radio">
                         <input class="" type="radio" name="gender" value="m" <?php if ($values['gender'] == 'm') {
                                                                                     print 'checked';
@@ -59,7 +61,9 @@
 
             <div class="input-block">
                 <span><?php print $messages['limbs']; ?></span>
-                <div class="radios">
+                <div class="radios <?php if ($errors['limbs']) {
+                                        print 'error';
+                                    } ?>">
                     <div class="limbs-radio">
                         <input class="form-check-input" type="radio" name="limbs" value="1" <?php if ($values['limbs'] == '1') {
                                                                                                 print 'checked';
@@ -88,9 +92,9 @@
             </div>
             <div class="input-block">
                 <span><?php print $messages['select']; ?></span>
-                <select class="input-item form-select-lg mb-2" name="select[]" multiple <?php if ($errors['select']) {
-                                                                                            print 'class="error"';
-                                                                                        } ?>>
+                <select class="input-item form-select-lg mb-2 <?php if ($errors['select']) {
+                                                                    print 'error';
+                                                                } ?>" name="select[]" multiple>
                     <option value="inf" <?php $arr = explode(',', $values['select']);
                                         if ($arr != '') {
                                             foreach ($arr as $value) {
@@ -122,9 +126,9 @@
             </div>
             <div class="input-block">
                 <span><?php print $messages['bio']; ?></span>
-                <textarea placeholder="Расскажите о себе..." name="bio" <?php if ($errors['bio']) {
-                                                                            print 'class="error"';
-                                                                        } ?>><?php print $values['bio']; ?></textarea>
+                <textarea placeholder="Расскажите о себе..." class="input-item <?php if ($errors['bio']) {
+                                                                                    print 'error';
+                                                                                } ?>" name="bio"><?php print $values['bio']; ?></textarea>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="y" id="policy" name="policy" checked />
