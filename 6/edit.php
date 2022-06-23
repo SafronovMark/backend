@@ -13,15 +13,15 @@
         <form method="POST" action="">
             <div class="input-block">
                 <span>Имя</span>
-                <input type="text" class="input-item" placeholder="Петр" />
+                <input type="text" name="name" class="input-item" placeholder="Петр" />
             </div>
             <div class="input-block">
                 <span>Email</span>
-                <input type="text" class="input-item" placeholder="petr@mail.com" />
+                <input type="text" name="email" class="input-item" placeholder="petr@mail.com" />
             </div>
             <div class="input-block">
                 <span>Дата Рождения</span>
-                <input type="date" class="input-item" />
+                <input type="date" name="date" class="input-item" />
             </div>
             <div class="input-block">
                 <span>Пол</span>
@@ -68,7 +68,7 @@
             </div>
             <div class="input-block">
                 <span>Биография</span>
-                <textarea placeholder="Люблю пиццу" class="input-item"></textarea>
+                <textarea placeholder="Люблю пиццу" name="bio" class="input-item"></textarea>
             </div>
             <div class=" form-check">
                 <input class="form-check-input" type="checkbox" value="y" id="policy" name="policy" checked />
