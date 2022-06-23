@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $messages = array();
-    $messages['name'] = "Конечности";
+    $messages['name'] = "Имя";
     $messages['email'] = "Email";
     $messages['date'] = "Дата Рождения";
     $messages['gender'] = "Пол";
