@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->execute(array($_POST['delete']));
 
             $powers = $db->prepare("DELETE FROM powersowners where owner_id = ?");
-            $powers->execute(array($_COOKIE['owner_id']));
+            $powers->execute(array($result['id']));
             header('Location: ?delete_error=0');
         }
     } else if (!empty($_POST['edit'])) {
