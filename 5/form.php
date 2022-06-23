@@ -19,11 +19,14 @@
     }
 
     if (!empty($messages['info'])) {
+        print('<div id="info">');
         print $messages['info'];
+        print('</div>');
     }
     ?>
 
     <div class="form-container">
+        <a href="login.php?logout=1" <?php (empty($_SESSION['login'])) ? print('style="display:none"') : print('style="display:inline-block"'); ?>>Выйти</a>
         <form method="POST" action="">
             <div class="input-block">
                 <span <?php if ($errors['name']) {
