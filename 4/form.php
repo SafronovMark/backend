@@ -22,33 +22,33 @@
     <div class="form-container">
         <form method="POST" action="">
             <div class="input-block">
-                <span class="<?php if ($errors['name']) {
-                                    print "class='error-title'";
-                                } ?>"><?php print $messages['name']; ?></span>
+                <span <?php if ($errors['name']) {
+                            print "class='error-title'";
+                        } ?>><?php print $messages['name']; ?></span>
                 <input type="text" class="input-item <?php if ($errors['name']) {
                                                             print 'error';
                                                         } ?>" name="name" placeholder="Петр" value="<?php print $values['name']; ?>" />
             </div>
             <div class="input-block">
-                <span class="<?php if ($errors['email']) {
-                                    print "class='error-title'";
-                                } ?>"><?php print $messages['email']; ?></span>
+                <span <?php if ($errors['email']) {
+                            print "class='error-title'";
+                        } ?>><?php print $messages['email']; ?></span>
                 <input type="text" class="input-item <?php if ($errors['email']) {
                                                             print 'error';
                                                         } ?>" name="email" placeholder="petr@mail.com" value="<?php print $values['email']; ?>" />
             </div>
             <div class="input-block">
-                <span class="<?php if ($errors['date']) {
-                                    print "class='error-title'";
-                                } ?>"><?php print $messages['date']; ?></span>
+                <span <?php if ($errors['date']) {
+                            print "class='error-title'";
+                        } ?>><?php print $messages['date']; ?></span>
                 <input type="date" class="input-item <?php if ($errors['date']) {
                                                             print 'error';
                                                         } ?>" name="date" value="<?php print $values['date']; ?>" />
             </div>
             <div class="input-block">
-                <span class="<?php if ($errors['gender']) {
-                                    print "class='error-title'";
-                                } ?>"><?php print $messages['gender']; ?></span>
+                <span <?php if ($errors['gender']) {
+                            print "class='error-title'";
+                        } ?>><?php print $messages['gender']; ?></span>
                 <div class="radios <?php if ($errors['gender']) {
                                         print 'error';
                                     } ?>">
@@ -68,9 +68,9 @@
             </div>
 
             <div class="input-block">
-                <span class="<?php if ($errors['limbs']) {
-                                    print "class='error-title'";
-                                } ?>"><?php print $messages['limbs']; ?></span>
+                <span <?php if ($errors['limbs']) {
+                            print "class='error-title'";
+                        } ?>><?php print $messages['limbs']; ?></span>
                 <div class="radios <?php if ($errors['limbs']) {
                                         print 'error';
                                     } ?>">
@@ -101,9 +101,9 @@
                 </div>
             </div>
             <div class="input-block">
-                <span class="<?php if ($errors['select']) {
-                                    print "class='error-title'";
-                                } ?>"><?php print $messages['select']; ?></span>
+                <span <?php if ($errors['select']) {
+                            print "class='error-title'";
+                        } ?>><?php print $messages['select']; ?></span>
                 <select class="input-item form-select-lg mb-2 <?php if ($errors['select']) {
                                                                     print 'error';
                                                                 } ?>" name="select[]" multiple>
@@ -137,9 +137,9 @@
                 </select>
             </div>
             <div class="input-block">
-                <span class="<?php if ($errors['bio']) {
-                                    print "class='error-title'";
-                                } ?>"><?php print $messages['bio']; ?></span>
+                <span <?php if ($errors['bio']) {
+                            print "class='error-title'";
+                        } ?>><?php print $messages['bio']; ?></span>
                 <textarea placeholder="Люблю пиццу" class="input-item <?php if ($errors['bio']) {
                                                                             print 'error';
                                                                         } ?>" name="bio"><?php print $values['bio']; ?></textarea>
