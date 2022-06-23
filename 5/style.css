@@ -13,8 +13,15 @@ body {
     padding: 10px;
 }
 
-#info, #messages {
-    align-self: center;
+.other-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#messages {
+    color: rgba(0, 255, 0, 0.4);
 }
 
 .form-container {
