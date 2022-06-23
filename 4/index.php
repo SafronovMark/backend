@@ -7,6 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $messages['name'] = "Конечности";
     $messages['email'] = "Email";
     $messages['date'] = "Дата Рождения";
+    $messages['gender'] = "Пол";
     $messages['limbs'] = "Конечности";
     $messages['select'] = "Суперспособности";
     $messages['bio'] = "Биография";
@@ -28,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     if ($errors['name']) {
         setcookie('name_error', '', 100000);
-        $messages['name'] = 'Введите корректное имя(оно не может быть пустым и может содержать только буквы).';
+        $messages['name'] = 'Введите корректное имя';
     }
     if ($errors['email']) {
         setcookie('email_error', '', 100000);
