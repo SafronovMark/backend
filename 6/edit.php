@@ -12,19 +12,19 @@
     <div class="form-container">
         <form method="POST" action="">
             <div class="input-block">
-                <span></span>
-                <input type="text" class="input-item" />
+                <span>Имя</span>
+                <input type="text" class="input-item" placeholder="Петр" />
             </div>
             <div class="input-block">
-                <span></span>
-                <input type="text" class="input-item" />
+                <span>Email</span>
+                <input type="text" class="input-item" placeholder="petr@mail.com" />
             </div>
             <div class="input-block">
-                <span></span>
+                <span>Дата Рождения</span>
                 <input type="date" class="input-item" />
             </div>
             <div class="input-block">
-                <span></span>
+                <span>Пол</span>
                 <div class="radios">
                     <div class="male-radio">
                         <input class="" type="radio" name="gender" value="m" />
@@ -38,7 +38,7 @@
             </div>
 
             <div class="input-block">
-                <span></span>
+                <span>Конечности</span>
                 <div class="radios">
                     <div class="limbs-radio">
                         <input class="form-check-input" type="radio" name="limbs" value="1" />
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="input-block">
-                <span></span>
+                <span>Суперспособности</span>
                 <select class="input-item form-select-lg mb-2" name="select[]" multiple>
                     <option value="inf">Бессмертие</option>
                     <option value="through">Прохождение сквозь стены</option>
@@ -67,7 +67,7 @@
                 </select>
             </div>
             <div class="input-block">
-                <span></span>
+                <span>Биография</span>
                 <textarea placeholder="Люблю пиццу" class="input-item"></textarea>
             </div>
             <div class=" form-check">
