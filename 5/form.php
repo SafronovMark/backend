@@ -11,19 +11,21 @@
 
 <body>
 
-    <?php
-    if (!empty($messages['success'])) {
-        print('<div id="messages">');
-        print $messages['success'];
-        print('</div>');
-    }
+    <div id="other-messages">
+        <?php
+        if (!empty($messages['success'])) {
+            print('<div id="messages">');
+            print $messages['success'];
+            print('</div>');
+        }
 
-    if (!empty($messages['info'])) {
-        print('<div id="info">');
-        print $messages['info'];
-        print('</div>');
-    }
-    ?>
+        if (!empty($messages['info'])) {
+            print('<div id="info">');
+            print $messages['info'];
+            print('</div>');
+        }
+        ?>
+    </div>
 
     <div class="form-container">
         <a href="login.php?logout=1" <?php (empty($_SESSION['login'])) ? print('style="display:none"') : print('style="display:inline-block"'); ?>>Выйти</a>
