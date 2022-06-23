@@ -23,7 +23,7 @@
         <form method="POST" action="">
             <div class="input-block">
                 <span class="<?php if ($errors['name']) {
-                                    print 'error-title';
+                                    print "class='error-title'";
                                 } ?>"><?php print $messages['name']; ?></span>
                 <input type="text" class="input-item <?php if ($errors['name']) {
                                                             print 'error';
@@ -31,7 +31,7 @@
             </div>
             <div class="input-block">
                 <span class="<?php if ($errors['email']) {
-                                    print 'error-title';
+                                    print "class='error-title'";
                                 } ?>"><?php print $messages['email']; ?></span>
                 <input type="text" class="input-item <?php if ($errors['email']) {
                                                             print 'error';
@@ -39,7 +39,7 @@
             </div>
             <div class="input-block">
                 <span class="<?php if ($errors['date']) {
-                                    print 'error-title';
+                                    print "class='error-title'";
                                 } ?>"><?php print $messages['date']; ?></span>
                 <input type="date" class="input-item <?php if ($errors['date']) {
                                                             print 'error';
@@ -47,7 +47,7 @@
             </div>
             <div class="input-block">
                 <span class="<?php if ($errors['gender']) {
-                                    print 'error-title';
+                                    print "class='error-title'";
                                 } ?>"><?php print $messages['gender']; ?></span>
                 <div class="radios <?php if ($errors['gender']) {
                                         print 'error';
@@ -69,7 +69,7 @@
 
             <div class="input-block">
                 <span class="<?php if ($errors['limbs']) {
-                                    print 'error-title';
+                                    print "class='error-title'";
                                 } ?>"><?php print $messages['limbs']; ?></span>
                 <div class="radios <?php if ($errors['limbs']) {
                                         print 'error';
@@ -102,7 +102,7 @@
             </div>
             <div class="input-block">
                 <span class="<?php if ($errors['select']) {
-                                    print 'error-title';
+                                    print "class='error-title'";
                                 } ?>"><?php print $messages['select']; ?></span>
                 <select class="input-item form-select-lg mb-2 <?php if ($errors['select']) {
                                                                     print 'error';
@@ -138,7 +138,7 @@
             </div>
             <div class="input-block">
                 <span class="<?php if ($errors['bio']) {
-                                    print 'error-title';
+                                    print "class='error-title'";
                                 } ?>"><?php print $messages['bio']; ?></span>
                 <textarea placeholder="Люблю пиццу" class="input-item <?php if ($errors['bio']) {
                                                                             print 'error';
