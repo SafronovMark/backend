@@ -17,6 +17,10 @@
         print $messages['success'];
         print('</div>');
     }
+
+    if (!empty($messages['info'])) {
+        print $messages['info'];
+    }
     ?>
 
     <div class="form-container">
