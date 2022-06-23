@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         // Если в куках есть пароль, то выводим сообщение.
         if (!empty($_COOKIE['pass'])) {
             $messages['info'] = sprintf(
-                'Теперь вы можете <a href="login.php">войти</a>с логином <strong>%s</strong><br/>
+                'Теперь вы можете <a href="login.php">войти</a> с логином <strong>%s</strong><br/>
         и паролем <strong>%s</strong> для изменения данных.',
                 strip_tags($_COOKIE['login']),
                 strip_tags($_COOKIE['pass'])
