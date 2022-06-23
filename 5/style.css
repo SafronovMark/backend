@@ -13,6 +13,10 @@ body {
     padding: 10px;
 }
 
+#info, #messages {
+    align-self: center;
+}
+
 .form-container {
     width: 30%;
     padding: 10px 20px;
