@@ -126,9 +126,9 @@
             </div>
             <div class="input-block">
                 <span><?php print $messages['bio']; ?></span>
-                <textarea placeholder="Расскажите о себе..." class="input-item <?php if ($errors['bio']) {
-                                                                                    print 'error';
-                                                                                } ?>" name="bio"><?php print $values['bio']; ?></textarea>
+                <textarea placeholder="Люблю пиццу" class="input-item <?php if ($errors['bio']) {
+                                                                            print 'error';
+                                                                        } ?>" name="bio"><?php print $values['bio']; ?></textarea>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="y" id="policy" name="policy" checked />
