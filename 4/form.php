@@ -22,25 +22,33 @@
     <div class="form-container">
         <form method="POST" action="">
             <div class="input-block">
-                <span><?php print $messages['name']; ?></span>
+                <span class="<?php if ($errors['name']) {
+                                    print 'error-title';
+                                } ?>"><?php print $messages['name']; ?></span>
                 <input type="text" class="input-item <?php if ($errors['name']) {
                                                             print 'error';
                                                         } ?>" name="name" placeholder="Петр" value="<?php print $values['name']; ?>" />
             </div>
             <div class="input-block">
-                <span><?php print $messages['email']; ?></span>
+                <span class="<?php if ($errors['email']) {
+                                    print 'error-title';
+                                } ?>"><?php print $messages['email']; ?></span>
                 <input type="text" class="input-item <?php if ($errors['email']) {
                                                             print 'error';
                                                         } ?>" name="email" placeholder="petr@mail.com" value="<?php print $values['email']; ?>" />
             </div>
             <div class="input-block">
-                <span><?php print $messages['date']; ?></span>
+                <span class="<?php if ($errors['date']) {
+                                    print 'error-title';
+                                } ?>"><?php print $messages['date']; ?></span>
                 <input type="date" class="input-item <?php if ($errors['date']) {
                                                             print 'error';
                                                         } ?>" name="date" value="<?php print $values['date']; ?>" />
             </div>
             <div class="input-block">
-                <span><?php print $messages['gender']; ?></span>
+                <span class="<?php if ($errors['gender']) {
+                                    print 'error-title';
+                                } ?>"><?php print $messages['gender']; ?></span>
                 <div class="radios <?php if ($errors['gender']) {
                                         print 'error';
                                     } ?>">
@@ -60,7 +68,9 @@
             </div>
 
             <div class="input-block">
-                <span><?php print $messages['limbs']; ?></span>
+                <span class="<?php if ($errors['limbs']) {
+                                    print 'error-title';
+                                } ?>"><?php print $messages['limbs']; ?></span>
                 <div class="radios <?php if ($errors['limbs']) {
                                         print 'error';
                                     } ?>">
@@ -91,7 +101,9 @@
                 </div>
             </div>
             <div class="input-block">
-                <span><?php print $messages['select']; ?></span>
+                <span class="<?php if ($errors['select']) {
+                                    print 'error-title';
+                                } ?>"><?php print $messages['select']; ?></span>
                 <select class="input-item form-select-lg mb-2 <?php if ($errors['select']) {
                                                                     print 'error';
                                                                 } ?>" name="select[]" multiple>
@@ -125,7 +137,9 @@
                 </select>
             </div>
             <div class="input-block">
-                <span><?php print $messages['bio']; ?></span>
+                <span class="<?php if ($errors['bio']) {
+                                    print 'error-title';
+                                } ?>"><?php print $messages['bio']; ?></span>
                 <textarea placeholder="Люблю пиццу" class="input-item <?php if ($errors['bio']) {
                                                                             print 'error';
                                                                         } ?>" name="bio"><?php print $values['bio']; ?></textarea>
